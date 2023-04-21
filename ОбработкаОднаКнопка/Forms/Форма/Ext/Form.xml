@@ -59,6 +59,11 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<Button name="Поприветствовать" id="18">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.Поприветствовать</CommandName>
+			<ExtendedTooltip name="ПоприветствоватьРасширеннаяПодсказка" id="19"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -103,4 +108,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Поприветствовать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поприветствовать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поприветствовать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Поприветствовать</Action>
+		</Command>
+	</Commands>
 </Form>
