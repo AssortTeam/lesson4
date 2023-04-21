@@ -59,6 +59,56 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="Группа2" id="20">
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="Вычитаемое" id="28">
+					<DataPath>Вычитаемое</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="ВычитаемоеКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ВычитаемоеРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ВычитаемоеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="Декорация3" id="31">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>-</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация3КонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="33"/>
+				</LabelDecoration>
+				<InputField name="Уменьшаемое" id="25">
+					<DataPath>Уменьшаемое</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="УменьшаемоеКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="УменьшаемоеРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="OnChange">УменьшаемоеПриИзменении</Event>
+					</Events>
+				</InputField>
+				<LabelDecoration name="Декорация4" id="34">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>=</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="Декорация4КонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="Декорация4РасширеннаяПодсказка" id="36"/>
+				</LabelDecoration>
+				<InputField name="Разность" id="22">
+					<DataPath>Разность</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<ContextMenu name="РазностьКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="РазностьРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Button name="Поприветствовать" id="18">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.Поприветствовать</CommandName>
@@ -105,6 +155,54 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Уменьшаемое" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Уменьшаемое</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Вычитаемое" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вычитаемое</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Разность" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разность</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
